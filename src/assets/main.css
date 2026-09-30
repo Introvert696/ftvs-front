@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+@import 'tailwindcss';
+@theme {
+  --default-font-family: 'Open Sans', sans-serif;
+  --default-bg-main: #121212;
+  --default-second-color: #282828;
+
+  --animate-open-left-menu: openMenu ease-in 0.2s both;
+  @keyframes openMenu {
+    from {
+      display: none;
+      transform: translateX(-200px);
+    }
+    to {
+      display: block;
+      transform: translateX(0);
+    }
+  }
+}
+body {
+  background-color: var(--default-bg-main);
+  color: white;
+}
